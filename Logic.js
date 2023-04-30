@@ -8,6 +8,7 @@ const builder = new xml2js.Builder();
 const js2xmlparser = require("js2xmlparser");
 const axios = require('axios');
 const bodyParser = require('body-parser');
+const querystring = require('querystring');
 const xmlData = '<Students><student><roll>20211002</roll></student></Students>';
 const options = {
     explicitArray: false,
@@ -24,7 +25,7 @@ const config = {
   };
 var jsonData;
 
-// Endpoint to Get a list of users
+// Endpoint to Get a list of users in xml format
 app.get('/getStuCivil', function(req, res){
     fs.readFile(__dirname + "/" + "stu.json", 'utf8', function(err, data){
         const DetailXml = builder.buildObject({Students: {student: JSON.parse(data)}});
@@ -37,11 +38,26 @@ app.get('/getStuCivil', function(req, res){
 
  app.use(bodyParser.text({ type: 'application/xml' }));
  app.use(bodyParser.json());
-
+//if df parameter is passed as json then whole data will be returned as json else data of single student with given roll no will be returned
  app.post('/CvId', function (req, res) {
     // First retrieve existing user list
      const indta = req.body;
-    //  const injs = JSON.stringify(indta);
+    //  const pr1 = req.params;
+     var query = (req.url.split("?")[1]);
+     if(typeof(query) !== 'undefined'){
+        const queryParams = querystring.parse(query);
+        if(queryParams.df === 'json'){
+            fs.readFile(__dirname + "/" + "stu.json", 'utf8', function(err, data){
+                
+                // console.log(DetailXml);
+                res.type('application/json')
+                res.end(data); // you can also use res.send()
+            });
+        }
+     }
+     
+     
+    //  console.log(queryParams.name)
     xml2js.parseString(indta, options, (err, result) => {
         if (err) {
           console.error(err);
