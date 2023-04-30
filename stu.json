@@ -1,0 +1,119 @@
+[
+   {
+    "name": "Jane Smith",
+    "roll_no": "20211002",
+    "age": 21,
+    "department": "civil",
+    "semester": 4,
+    "phone": "555-123-4567",
+    "email": "jane.smith@example.com"
+  },
+  {
+    "name": "Alex Johnson",
+    "roll_no": "20211003",
+    "age": 19,
+    "department": "computer",
+    "semester": 1,
+    "phone": "555-987-6543",
+    "email": "alex.johnson@example.com"
+  },
+  {
+    "name": "Emily Davis",
+    "roll_no": "20211004",
+    "age": 22,
+    "department": "civil",
+    "semester": 6,
+ 
+    "phone": "555-555-5555",
+    "email": "emily.davis@example.com"
+  },
+  {
+    "name": "Michael Lee",
+    "roll_no": "20211005",
+    "age": 20,
+    "department": "computer",
+    "semester": 3,
+
+    "phone": "555-222-3333",
+    "email": "michael.lee@example.com"
+  },
+  {
+    "name": "Sarah Patel",
+    "roll_no": "20211006",
+    "age": 21,
+    "department": "computer",
+    "semester": 4,
+
+    "phone": "555-111-2222",
+    "email": "sarah.patel@example.com"
+  },
+  {
+    "name": "Kevin Garcia",
+    "roll_no": "20211007",
+    "age": 23,
+    "department": "civil",
+    "semester": 7,
+ 
+    "phone": "555-444-5555",
+    "email": "kevin.garcia@example.com"
+  },
+  {
+    "name": "Jessica Kim",
+    "roll_no": "20211008",
+    "age": 20,
+    "department": "computer",
+    "semester": 3,
+ 
+    "phone": "555-333-4444",
+    "email": "jessica.kim@example.com"
+  },
+  {
+    "name": "Daniel Rodriguez",
+    "roll_no": "20211009",
+    "age": 22,
+    "department": "civil",
+    "semester": 5,
+
+    "phone": "555-777-8888",
+    "email": "daniel.rodriguez@example.com"
+  },
+  {
+    "name": "Daniel Rodriguez",
+    "roll_no": "20211009",
+    "age": 22,
+    "department": "civil",
+    "semester": 5,
+
+    "phone": "555-777-8888",
+    "email": "daniel.rodriguez@example.com"
+  },
+  {
+    "name": "Sophia Brown",
+    "roll_no": "20211010",
+    "age": 19,
+    "department": "computer",
+    "semester": 2,
+    "phone": "555-999-0000",
+    "email": "sophia.brown@example.com"
+  },
+  {
+    "name": "Matthew Nguyen",
+    "roll_no": "20211011",
+    "age": 20,
+    "department": "civil",
+    "semester": 3,
+  
+    "phone": "555-666-7777",
+    "email": "matthew.nguyen@example.com"
+  },
+  {
+    "name": "Isabella Kim",
+    "roll_no": "20211012",
+    "age": 21,
+    "department": "computer",
+    "semester": 4,
+ 
+    "phone": "555-222-3333",
+    "email": "iss@gmail.com"
+  }               
+]
